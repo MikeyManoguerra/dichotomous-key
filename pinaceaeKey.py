@@ -188,6 +188,7 @@ b = 'b'
 c = 'c'
 choose_a = 'choose_a'
 choose_b = 'choose_b'
+choose_c = 'choose_c'
 parent = 'parent'
 
 
@@ -244,40 +245,42 @@ pinus_binary_location = {
     51: {
         a: 'middle states,branches very fiberous, tough to break',  # virginiana
         b: 'southern state, broad leaf forest',  # glabra
-        choose_a:,
-        choose_b:,
-        parent: },
+        choose_a: species_extended_info['Pinus virginiana'],
+        choose_b: species_extended_info['Pinus glabra'],
+        parent: 43
+    },
     52: {
         a: 'tree needles 2-3 inches long',  # sylvestris
         b: 'tree needles 4-6 inches long',  # resinosa
-        choose_a:,
-        choose_b:,
-        parent: },
+        choose_a: species_extended_info['Pinus sylvestris'],
+        choose_b: species_extended_info['Pinus resinosa'],
+        parent: 43
+    },
     22: {
         a: 'Needles in bundles of 5',  # strobis
         b: 'Needles in bundles of 3-4',
-        c: 'Needles in bundles of more than 5'
-        choose_a:
-        choose_b:
+        c: 'Needles in bundles of more than 5',
+        choose_a: 'hey',
+        choose_b: 'hey',
         choose_c: 'uhoh',  # TODO point this backwards
         parent: 11
     },
-    33: {
-        a: 'cones more than three inches long',
-        b: 'cones less than three inches long',
-        choose_a:,
-        choose_b:,
-        parent: },
-    44: {
-        a: 'needles 6-9 inches long, end buds brown',  # taeda
-        b: 'needles 8-18 inches long, end buds white',  # paulustis
-        choose_a:,
-        choose_b:,
-        parent: },
-    45: {
-        a: 'cone prickles stout, located in northern or middle states',  # rigida
-        b: 'cone prick;es this or absent, located southern states',  # serotina
-        choose_a:,
-        choose_b:,
-        parent: }
+    # 33: {
+    #     a: 'cones more than three inches long',
+    #     b: 'cones less than three inches long',
+    #     choose_a:,
+    #     choose_b:,
+    #     parent: },
+    # 44: {
+    #     a: 'needles 6-9 inches long, end buds brown',  # taeda
+    #     b: 'needles 8-18 inches long, end buds white',  # paulustis
+    #     choose_a:,
+    #     choose_b:,
+    #     parent: },
+    # 45: {
+    #     a: 'cone prickles stout, located in northern or middle states',  # rigida
+    #     b: 'cone prick;es this or absent, located southern states',  # serotina
+    #     choose_a:,
+    #     choose_b:,
+    #     parent: }
 }

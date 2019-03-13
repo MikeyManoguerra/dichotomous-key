@@ -22,8 +22,8 @@ continents = [
 choose_a = pinaceaeKey.choose_a
 
 
-next_binary = pinaceaeKey.pinus_binary_location[11][choose_a]
-next_binary = pinaceaeKey.pinus_binary_location[next_binary]
+next_binary = pinaceaeKey.pinus_binary_location[42]  #[choose_a]
+# next_binary = pinaceaeKey.pinus_binary_location[next_binary]
 pp = pprint.PrettyPrinter(depth=4)
 pp.pprint(next_binary) 
 
