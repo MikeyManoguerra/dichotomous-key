@@ -23,256 +23,261 @@ North_American_Pines = {
     'Pinus elliotii': PINACEAE['Pinus']['species']['Pinus elliotii'],
 }
 
-STOUT ='stout'
-THIN ='thin'
-LACKING= 'lacking'
-THIN_LACKING='thin to lacking'
+STOUT = 'stout'
+THIN = 'thin'
+LACKING = 'lacking'
+THIN_LACKING = 'thin to lacking'
 ROUND = 'round'
 NORTH = 'Northern states'
 MIDDLE = 'Middle states'
 SOUTH = 'south'
-NORTH_MIDDLE ='northern and middle states'
+NORTH_MIDDLE = 'northern and middle states'
 BOTH = 'Both'
-MIDDLE_SOUTH =  'middle and southern states'
+MIDDLE_SOUTH = 'middle and southern states'
 
-# 'Pinus rigida'
-['Needles thin, conese slim, branches parallel']
-{'dist': NORTH_MIDDLE,
-  'needles per cluster': 3,
-  'needle length': 2-4,
-  'trunk sprouts after fire': True,
-  'many old cones on tree': True,
-  'cones longer than three inches': False,
-  'cones longer than wide': ROUND,
-  'cone prickle type': STOUT
- },
-# 'Pinus strobus'
-{'dist': NORTH_MIDDLE,
-  'needles per cluster': 3,
-  'needle length': 3-6,
-  'trunk sprouts after fire': False,
-  'Many old cones on tree': False,
-  'Cones longer than three inches': True,
-  'Cones longer than wide': True,
-  'Cone Prickle type': LACKING
- },
-# 'Pinus serotina'
-{'dist': SOUTH,
-  'needles per cluster': 3,
-  'needle length': 4-8,
-  'trunk sprouts after fire': True,
-  'many old cones on tree': True,
-  'cones longer than three inches': False,
-  'cones longer than wide': ROUND
-  'cone Prickle type': THIN_LACKING
- },
-# 'Pinus taeda'
-{'dist': SOUTH,
-  'needles per cluster': 3,
-  'needle length': 6-9,
-  'trunk sprouts after fire': False,
-  'many old cones on tree': True,
-  'cones longer than three inches': True,
-  'cones longer than wide': True,
-  'cone prickle type': STOUT
- },
-# 'Pinus palustris'
-{'dist': SOUTH,
-  'needles per cluster': 3,
-  'needle length': 8-18,
-  'trunk sprouts after fire': False,
-  'many old cones on tree': False,
-  'cones longer than three inches': True,
-  'cones longer than wide': True,
-  'cone prickle type': THIN
- },
-# 'Pinus banksiana'
-{'dist': NORTH,
-  'needle length': 2-4,
-  'twigs rough near needle': True,
-  'many old cones on tree': True,
-  'cones longer than three inches': False,
-  'cones longer than wide': True,
-  'cone prickle type': THIN_LACKING
- },
-# 'Pinus sylvestris'
-{'dist': NORTH,
-  'needle length': 2-3,
-  'twigs rough near needle': False,
-  'many old cones on tree': False,
-  'cones longer than three inches': False,
-  'cones longer than wide': ROUND,
-  'cone prickle type': LACKING
- },
-# 'Pinus nigra nigra'
-{'dist': NORTH,
-  'needle length': 3-6,
-  'twigs rough near needle': True,
-  'many old cones on tree': False,
-  'cones longer than three inches': BOTH,
-  'cones longer than wide': True,
-  'cone prickle type': STOUT
- },
-# 'Pinus resinosa'
-{'dist': NORTH,
-  'needle length': 4-6,
-  'twigs rough near needle': BOTH,
-  'many old cones on tree': False,
-  'cones longer than three inches': False,
-  'cones longer than wide': True,
-  'cone prickle type': LACKING
- },
 
-# 'Pinus pungens'
-{'dist': MIDDLE,
-  'needle length': 2-3,
-  'twigs rough near needle': True,
-  'many old cones on tree': True,
-  'cones longer than three inches': BOTH,
-  'cones longer than wide': ROUND,
-  'cone prickle type': STOUT
-# 'Pinus virginiana'
-{'dist': MIDDLE,
-  'needle length': 2-3,
-  'twigs rough near needle': False,
-  'many old cones on tree': True,
-  'cones longer than three inches': False,
-  'cones longer than wide': BOTH,
-  'cone prickle type': THIN
- }.
-# 'Pinus echinata'
-{'dist': MIDDLE_SOUTH,
-  'needle length': 3-5,
-  'twigs rough near needle': True,
-  'many old cones on tree': True,
-  'cones longer than three inches': False,
-  'cones longer than wide': True,
-  'cone prickle type': THIN
-},
-# 'Pinus glabra'
-{'dist': SOUTH,
-  'needle length': 2-4,
-  'twigs rough near needle': False,
-  'many old cones on tree': True,
-  'cones longer than three inches': False,
-  'cones longer than wide': True,
-  'cone prickle type': THIN_LACKING
- },
+species_extended_info = {
+    'Pinus rigida': {
+        # ['Needles thin, conese slim, branches parallel']
+        'dist': NORTH_MIDDLE,
+        'needles per cluster': 3,
+        'needle length': 2-4,
+        'trunk sprouts after fire': True,
+        'many old cones on tree': True,
+        'cones longer than three inches': False,
+        'cones longer than wide': ROUND,
+        'cone prickle type': STOUT
+    },
+    'Pinus strobus': {
+        'dist': NORTH_MIDDLE,
+        'needles per cluster': 3,
+        'needle length': 3-6,
+        'trunk sprouts after fire': False,
+        'Many old cones on tree': False,
+        'Cones longer than three inches': True,
+        'Cones longer than wide': True,
+        'Cone Prickle type': LACKING
+    },
+    'Pinus serotina': {
+        'dist': SOUTH,
+        'needles per cluster': 3,
+        'needle length': 4-8,
+        'trunk sprouts after fire': True,
+        'many old cones on tree': True,
+        'cones longer than three inches': False,
+        'cones longer than wide': ROUND,
+        'cone prickle type': THIN_LACKING
+    },
+    'Pinus taeda': {
+        'dist': SOUTH,
+        'needles per cluster': 3,
+        'needle length': 6-9,
+        'trunk sprouts after fire': False,
+        'many old cones on tree': True,
+        'cones longer than three inches': True,
+        'cones longer than wide': True,
+        'cone prickle type': STOUT
+    },
+    'Pinus palustris': {
+        'dist': SOUTH,
+        'needles per cluster': 3,
+        'needle length': 8-18,
+        'trunk sprouts after fire': False,
+        'many old cones on tree': False,
+        'cones longer than three inches': True,
+        'cones longer than wide': True,
+        'cone prickle type': THIN
+    },
+    'Pinus banksiana': {
+        'dist': NORTH,
+        'needle length': 2-4,
+        'twigs rough near needle': True,
+        'many old cones on tree': True,
+        'cones longer than three inches': False,
+        'cones longer than wide': True,
+        'cone prickle type': THIN_LACKING
+    },
+    'Pinus sylvestris': {
+        'dist': NORTH,
+        'needle length': 2-3,
+        'twigs rough near needle': False,
+        'many old cones on tree': False,
+        'cones longer than three inches': False,
+        'cones longer than wide': ROUND,
+        'cone prickle type': LACKING
+    },
+    'Pinus nigra nigra': {
+        'dist': NORTH,
+        'needle length': 3-6,
+        'twigs rough near needle': True,
+        'many old cones on tree': False,
+        'cones longer than three inches': BOTH,
+        'cones longer than wide': True,
+        'cone prickle type': STOUT
+    },
+    'Pinus resinosa': {
+        'dist': NORTH,
+        'needle length': 4-6,
+        'twigs rough near needle': BOTH,
+        'many old cones on tree': False,
+        'cones longer than three inches': False,
+        'cones longer than wide': True,
+        'cone prickle type': LACKING
+    },
 
-# 'Pinus elliotii'
+    'Pinus pungens': {
+        'dist': MIDDLE,
+        'needle length': 2-3,
+        'twigs rough near needle': True,
+        'many old cones on tree': True,
+        'cones longer than three inches': BOTH,
+        'cones longer than wide': ROUND,
+        'cone prickle type': STOUT
+    },
+    'Pinus virginiana': {
+        'dist': MIDDLE,
+        'needle length': 2-3,
+        'twigs rough near needle': False,
+        'many old cones on tree': True,
+        'cones longer than three inches': False,
+        'cones longer than wide': BOTH,
+        'cone prickle type': THIN
+    },
+    'Pinus echinata': {
+        'dist': MIDDLE_SOUTH,
+        'needle length': 3-5,
+        'twigs rough near needle': True,
+        'many old cones on tree': True,
+        'cones longer than three inches': False,
+        'cones longer than wide': True,
+        'cone prickle type': THIN
+    },
+    'Pinus glabra': {
+        'dist': SOUTH,
+        'needle length': 2-4,
+        'twigs rough near needle': False,
+        'many old cones on tree': True,
+        'cones longer than three inches': False,
+        'cones longer than wide': True,
+        'cone prickle type': THIN_LACKING
+    },
+    'Pinus elliotii': {
+        'dist': SOUTH,
+        'needle length': 5-11,
+        'twigs rough near needle': True,
+        'many old cones on tree': False,
+        'cones longer than three inches': True,
+        'cones longer than wide': True,
+        'cone prickle type': STOUT
+    }
+}
+
+
+# 'Pinus clausa
 {'dist': SOUTH,
-  'needle length': 5-11,
-  'twigs rough near needle': True,
-  'many old cones on tree': False,
-  'cones longer than three inches': True,
-  'cones longer than wide': True,
-  'cone prickle type': STOUT
+ 'needle length': 2-4,
+ 'twigs rough near needle': False,
+ 'many old cones on tree': True,
+ 'cones longer than three inches': False,
+ 'cones longer than wide': ROUND,
+ 'cone prickle type': STOUT
  }
-print(North_American_Pines['Pinus strobus'])
+
+a = 'a'
+b = 'b'
+c = 'c'
+choose_a = 'choose_a'
+choose_b = 'choose_b'
+parent = 'parent'
 
 
-# # 'Pinus clausa
-# {'dist': SOUTH,
-#   'needle length': 2-4,
-#   'twigs rough near needle': False,
-#   'many old cones on tree': True,
-#   'cones longer than three inches': False,
-#   'cones longer than wide': ROUND,
-#   'cone prickle type': STOUT
-#  }
-
-
-
-Pinus_Binary_location = {
-  11:{
-    a: '2 neeedles per cluster if mix of two and three pick this',
-    b: 'more than two needles per cluster',
-    choose_a: ,
-    choose_b: ,
-    parent: 'HEAD'
-
-  },
-  21: { 
-    a: 'cone prickles stout, all or some cones larger than 3 inches',
-    b: ' cones smaller three inches, cone prickles thin or lacking ',
-    choose_a: ,
-    choose_b: ,
-    parent:
-  },
-  31: {
-    a: 'cones longer than wide', #elliotii
-    b: 'cones wider than long or round on average',
-    choose_a: ,
-    choose_b: ,
-    parent:
-  },
-
-  41:{
-    a: 'many old cones on tree', # pungens
-    b: ' not many old cones on tree',# nigra
-    choose_a: ,
-    choose_b: ,
-    parent: 
-  },
-  32:{ 
-    a: 'twigs rough near needles',
-    b: ' twigs more smooth near needles',
-    choose_a: ,
-    choose_b: ,
-    parent:
-  },
-  42: {
-    a: 'needles very short 1.5 -2 inches', #banksiana
-    b: 'needles 3-5 inches', #echinata
-    choose_a: ,
-    choose_b: ,
-    parent:
-  },
-  43: {
-    a: 'many old cones on tree',
-    b: 'not many old cones on tree',
-    choose_a: ,
-    choose_b: ,
-    parent:
-  },
-  51: {
-    a: 'middle states,branches very fiberous, tough to break', # virginiana
-    b: 'southern state, broad leaf forest', #glabra
-    choose_a: ,
-    choose_b: ,
-    parent:
-  },
-  52:{
-    a: 'tree needles 2-3 inches long', #sylvestris
-    b: 'tree needles 4-6 inches long', #resinosa
-    choose_a: ,
-    choose_b: ,
-    parent: 
-  },
-  22:{
-    a: 'Needles in bundles of 5',#strobis
-    b: 'Needles in bundles of 3-4'
-    c: 'Needles in bundles of more than 5'
-  },
-  33: {
-    a: 'cones more than three inches long',
-    b: 'cones less than three inches long',
-    choose_a: ,
-    choose_b: ,
-    parent:
-  },
-  44:{
-    a: 'needles 6-9 inches long, end buds brown', #taeda
-    b: 'needles 8-18 inches long, end buds white',#paulustis
-    choose_a: ,
-    choose_b: ,
-    parent: 
-  },
-  45: { 
-    a: 'cone prickles stout, located in northern or middle states', #rigida
-    b: 'cone prick;es this or absent, located southern states',#serotina
-    choose_a: ,
-    choose_b: ,
-    parent: 
-  }
+pinus_binary_location = {
+    11: {
+        a: '2 neeedles per cluster (if mix of two and three pick this)',
+        b: 'more than two needles per cluster',
+        choose_a: 21,
+        choose_b: 22,
+        parent: 'HEAD'
+    },
+    21: {
+        a: 'cone prickles stout, all or some cones larger than 3 inches',
+        b: ' cones smaller three inches, cone prickles thin or lacking ',
+        choose_a: 31,
+        choose_b: 32,
+        parent: 11
+    },
+    31: {
+        a: 'cones longer than wide',  # elliotii
+        b: 'cones wider than long or round on average',
+        choose_a: species_extended_info['Pinus elliotii'],
+        choose_b: 41,
+        parent: 21
+    },
+    41: {
+        a: 'many old cones on tree',  # pungens
+        b: ' not many old cones on tree',  # nigra
+        choose_a: species_extended_info['Pinus pungens'],
+        choose_b: species_extended_info['Pinus nigra nigra'],
+        parent: 31,
+    },
+    32: {
+        a: 'twigs rough near needles',
+        b: ' twigs more smooth near needles',
+        choose_a: 42,
+        choose_b: 43,
+        parent: 21
+    },
+    42: {
+        a: 'needles very short 1.5 -2 inches',  # banksiana
+        b: 'needles 3-5 inches',  # echinata
+        choose_a: species_extended_info['Pinus banksiana'],
+        choose_b: species_extended_info['Pinus echinata'],
+        parent: 32
+    },
+    43: {
+        a: 'many old cones on tree',
+        b: 'not many old cones on tree',
+        choose_a: 51,
+        choose_b: 52,
+        parent: 32
+    },
+    51: {
+        a: 'middle states,branches very fiberous, tough to break',  # virginiana
+        b: 'southern state, broad leaf forest',  # glabra
+        choose_a:,
+        choose_b:,
+        parent: },
+    52: {
+        a: 'tree needles 2-3 inches long',  # sylvestris
+        b: 'tree needles 4-6 inches long',  # resinosa
+        choose_a:,
+        choose_b:,
+        parent: },
+    22: {
+        a: 'Needles in bundles of 5',  # strobis
+        b: 'Needles in bundles of 3-4',
+        c: 'Needles in bundles of more than 5'
+        choose_a:
+        choose_b:
+        choose_c: 'uhoh',  # TODO point this backwards
+        parent: 11
+    },
+    33: {
+        a: 'cones more than three inches long',
+        b: 'cones less than three inches long',
+        choose_a:,
+        choose_b:,
+        parent: },
+    44: {
+        a: 'needles 6-9 inches long, end buds brown',  # taeda
+        b: 'needles 8-18 inches long, end buds white',  # paulustis
+        choose_a:,
+        choose_b:,
+        parent: },
+    45: {
+        a: 'cone prickles stout, located in northern or middle states',  # rigida
+        b: 'cone prick;es this or absent, located southern states',  # serotina
+        choose_a:,
+        choose_b:,
+        parent: }
 }

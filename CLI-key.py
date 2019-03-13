@@ -1,5 +1,8 @@
 import textwrap, cmd, sys
-# import pinaceaeKey
+import pinaceaeKey
+import pprint
+
+
 SCREEN_WIDTH = 80
 
 location = 'start'
@@ -16,15 +19,23 @@ continents = [
   'Europe',
   'Asia']
 
+choose_a = pinaceaeKey.choose_a
+
+
+next_binary = pinaceaeKey.pinus_binary_location[11][choose_a]
+next_binary = pinaceaeKey.pinus_binary_location[next_binary]
+pp = pprint.PrettyPrinter(depth=4)
+pp.pprint(next_binary) 
+
 def defineLocation(loc):
   """defines where the user is in the binary tree"""
-  print(loc.a, '\n' loc.b)
+  print(loc.a, '\n', loc.b)
 
 def chooseFromOptions(parent, new):
   """allows the user to pick which statement is true about their specimen"""
 # binary tree item you chose
 # if htis points to another option, display that, 
-# if this points to
+# if this points to an actuall result, run the build display result function
 
 
 
