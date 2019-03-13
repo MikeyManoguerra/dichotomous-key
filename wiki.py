@@ -34,6 +34,7 @@ tsuga_string = 'Tsuga' + temp6[1]
 genus_string_list = [fir_string, cedar_string, larix_string, picea_string,
                      pinus_string, pseudotsuga_string, tsuga_string]
 
+# print(pinus_string)
 
 def splitLatinCommonNames(list_entry):
     """list of strings  formated 'taxonomic name - common name'
@@ -70,6 +71,7 @@ def buildNestedTaxonomy(nested_species):
         if index == 0:
             index += 1
         taxonomic_dict[this_genus]['species'][genus[0]] = {
+            'scientific name': genus[0],
             'common name': genus[1], 'charteristics': []}
         index += 1
     return [this_genus, taxonomic_dict]
