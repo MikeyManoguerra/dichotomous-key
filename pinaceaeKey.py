@@ -59,7 +59,7 @@ species_extended_info = {
         'Many old cones on tree': False,
         'Cones longer than three inches': True,
         'Cones longer than wide': True,
-        'Cone Prickle type': LACKING,
+        'Cone prickle type': LACKING,
         'short description':'',
         'full description':''
     },
@@ -213,13 +213,8 @@ def addCharacteristicsToSpecies(species_dict, characteristics):
                 species_dict[species]['characteristics'] = characteristics[chars]
     return species_dict
 
-
-
-
 addCharacteristicsToSpecies(North_American_Pines,  species_extended_info)
 
-pp = pprint.PrettyPrinter(depth=4)
-pp.pprint(North_American_Pines) 
 
 # # 'Pinus clausa
 # {'dist': SOUTH,
@@ -258,15 +253,15 @@ pinus_binary_location = {
     31: {
         a: 'cones longer than wide',  # elliotii
         b: 'cones wider than long or round on average',
-        choose_a: species_extended_info['Pinus elliotii'],
+        choose_a: North_American_Pines['Pinus elliotii'],
         choose_b: 41,
         parent: 21
     },
     41: {
         a: 'many old cones on tree',  # pungens
         b: ' not many old cones on tree',  # nigra
-        choose_a: species_extended_info['Pinus pungens'],
-        choose_b: species_extended_info['Pinus nigra nigra'],
+        choose_a: North_American_Pines['Pinus pungens'],
+        choose_b: North_American_Pines['Pinus nigra nigra'],
         parent: 31,
     },
     32: {
@@ -279,8 +274,8 @@ pinus_binary_location = {
     42: {
         a: 'needles very short 1.5 -2 inches',  # banksiana
         b: 'needles 3-5 inches',  # echinata
-        choose_a: species_extended_info['Pinus banksiana'],
-        choose_b: species_extended_info['Pinus echinata'],
+        choose_a: North_American_Pines['Pinus banksiana'],
+        choose_b: North_American_Pines['Pinus echinata'],
         parent: 32
     },
     43: {
@@ -293,22 +288,22 @@ pinus_binary_location = {
     51: {
         a: 'middle states,branches very fiberous, tough to break',  # virginiana
         b: 'southern state, broad leaf forest',  # glabra
-        choose_a: species_extended_info['Pinus virginiana'],
-        choose_b: species_extended_info['Pinus glabra'],
+        choose_a: North_American_Pines['Pinus virginiana'],
+        choose_b: North_American_Pines['Pinus glabra'],
         parent: 43
     },
     52: {
         a: 'tree needles 2-3 inches long',  # sylvestris
         b: 'tree needles 4-6 inches long',  # resinosa
-        choose_a: species_extended_info['Pinus sylvestris'],
-        choose_b: species_extended_info['Pinus resinosa'],
+        choose_a: North_American_Pines['Pinus sylvestris'],
+        choose_b: North_American_Pines['Pinus resinosa'],
         parent: 43
     },
     22: {
         a: 'Needles in bundles of 5',  # strobis
         b: 'Needles in bundles of 3-4',
         c: 'Needles in bundles of more than 5',
-        choose_a: species_extended_info['Pinus strobus'],
+        choose_a: North_American_Pines['Pinus strobus'],
         choose_b: 33,
         choose_c: 'uhoh',  # TODO point this backwards
         parent: 11
@@ -323,15 +318,15 @@ pinus_binary_location = {
     44: {
         a: 'needles 6-9 inches long, end buds brown',  # taeda
         b: 'needles 8-18 inches long, end buds white',  # paulustis
-        choose_a: species_extended_info['Pinus taeda'] ,
-        choose_b: species_extended_info['Pinus palustris'],
+        choose_a: North_American_Pines['Pinus taeda'] ,
+        choose_b: North_American_Pines['Pinus palustris'],
         parent: 33
     },
     45: {
         a: 'cone prickles stout, located in northern or middle states',  # rigida
-        b: 'cone prick;es this or absent, located southern states',  # serotina
-        choose_a: species_extended_info['Pinus rigida'],
-        choose_b: species_extended_info['Pinus serotina'],
+        b: 'cone prickles this or absent, located southern states',  # serotina
+        choose_a: North_American_Pines['Pinus rigida'],
+        choose_b: North_American_Pines['Pinus serotina'],
         parent: 33
     }
 }
