@@ -6,7 +6,7 @@ import pprint
 SCREEN_WIDTH = 80
 
 location = 'start'
-a_b_choices = []
+
 
 welcome = 'Welcome! this program provides a Dichotomous key for identifiying pine trees in the North Eastern Contintental US. '
 

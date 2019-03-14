@@ -72,7 +72,7 @@ def buildNestedTaxonomy(nested_species):
             index += 1
         taxonomic_dict[this_genus]['species'][genus[0]] = {
             'scientific name': genus[0],
-            'common name': genus[1], 'charteristics': []}
+            'common name': genus[1], 'characteristics': []}
         index += 1
     return [this_genus, taxonomic_dict]
 
