@@ -1,4 +1,4 @@
-#Python CLI dichotomous key for Pinus genus
+# Python CLI dichotomous key for Pinus genus
 
 ## What is this?
 
