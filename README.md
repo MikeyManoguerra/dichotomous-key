@@ -50,7 +50,7 @@
 
   Used to pair down the huge *Pinaceae* family and provided guidance on the binary options
 
-  [Wikipedia](https://www.wikipedia.org/)forever
+  [Wikipedia](https://www.wikipedia.org/) forever
 
   [this](https://inventwithpython.com/blog/2014/12/11/making-a-text-adventure-game-with-the-cmd-and-textwrap-python-modules/) guide to building a text adventure game got me started, and makes me want to add a tree combat feature!
   
