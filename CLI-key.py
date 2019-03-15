@@ -1,7 +1,7 @@
 import textwrap
 import cmd
 import sys
-import pinaceaeKey
+import pinusKey
 import pprint
 pp = pprint.PrettyPrinter(depth=4)
 
@@ -9,16 +9,16 @@ cli_wrap=textwrap.TextWrapper(width=80)
 
 SCREEN_WIDTH = 80
 
-a = pinaceaeKey.a
-b = pinaceaeKey.b
+a = pinusKey.a
+b = pinusKey.b
 
-choose_a = pinaceaeKey.choose_a
-choose_b = pinaceaeKey.choose_b
+choose_a = pinusKey.choose_a
+choose_b = pinusKey.choose_b
 
-parent = pinaceaeKey.parent
-current = pinaceaeKey.current
+parent = pinusKey.parent
+current = pinusKey.current
 
-location = pinaceaeKey.pinus_binary_location[11]
+location = pinusKey.pinus_binary_location[11]
 your_tree = None
 
 
@@ -40,7 +40,7 @@ def defineLocation(entry):
 def getSpeciesInfo(species_string):
     """gets species information from data storage"""
     global your_tree
-    your_tree = pinaceaeKey.Pinus_Genus_Dictionary[species_string]
+    your_tree = pinusKey.Pinus_Genus_Dictionary[species_string]
     defineLocation(your_tree.display_characteristics())
     
 
@@ -54,7 +54,7 @@ def checkForResult(route):
     """checks if chosen path is result or a route"""
     global location
     if type(route) == int:
-        location = pinaceaeKey.pinus_binary_location[route]
+        location = pinusKey.pinus_binary_location[route]
         defineLocation(location)
     if type(route) == str and route != 'HEAD':
         getSpeciesInfo(route)
