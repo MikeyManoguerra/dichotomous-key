@@ -30,7 +30,7 @@
 
   The navigation is a binary tree data structure.
 
-  ##Reflection
+  ## Reflection
 
   I like python's direct, simple syntax. 
   Python seemed to constantly be directing me away from variables towards strings, and in some ways I feel like I was fighting it by creating variables that just equal the same thing as a string. 
