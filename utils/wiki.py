@@ -1,6 +1,9 @@
 import wikipedia
 import pprint
 
+# pp = pprint.PrettyPrinter(depth=3)
+# pp.pprint(nested_family_dict)
+
 family_list = wikipedia.WikipediaPage(
     "List of trees and shrubs by taxonomic family").content
 
@@ -34,8 +37,6 @@ tsuga_string = 'Tsuga' + temp6[1]
 genus_string_list = [fir_string, cedar_string, larix_string, picea_string,
                      pinus_string, pseudotsuga_string, tsuga_string]
 
-# print(pinus_string)
-
 def splitLatinCommonNames(list_entry):
     """list of strings  formated 'taxonomic name - common name'
     and make a list of nested two item lists """
@@ -45,7 +46,6 @@ def splitLatinCommonNames(list_entry):
             common_latin_list = species.split(' – ')
             parsed_genus.append(common_latin_list)
     return parsed_genus
-
 
 def processGenusStringsList(lst_entry):
     """list of genus strings to nested lists"""
@@ -83,10 +83,8 @@ for genus in nested_names_list:
 
 print(nested_family_dict)
 
-# pp = pprint.PrettyPrinter(depth=3)
-# pp.pprint(nested_family_dict)
 
-
+######## Mockup of Dictionary Structure###########
 # Pinaceae = {
 #  type: Family,
 #  genus: ['Cedrus','Larix','Picea','Pinus','Pseudotsuga','Tsuga']

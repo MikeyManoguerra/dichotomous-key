@@ -5,20 +5,20 @@ import pinaceaeKey
 import pprint
 pp = pprint.PrettyPrinter(depth=4)
 
+cli_wrap=textwrap.TextWrapper(width=80)
 
 SCREEN_WIDTH = 80
 
 a = pinaceaeKey.a
 b = pinaceaeKey.b
-c = pinaceaeKey.c
+
 choose_a = pinaceaeKey.choose_a
 choose_b = pinaceaeKey.choose_b
-choose_c = pinaceaeKey.choose_c
+
 parent = pinaceaeKey.parent
 current = pinaceaeKey.current
 
 location = pinaceaeKey.pinus_binary_location[11]
-next_binary = pinaceaeKey.pinus_binary_location[42]  # [choose_a]
 your_tree = None
 
 
@@ -32,21 +32,27 @@ def defineLocation(entry):
         print(location[a] + ' ---press "a"',
               '\n\n', location[b] + ' ---press "b"')
     else:
+       print(entry)
+       print('\n\n', 'type "more" for more info')
 
-        print(entry)
 
 
 def getSpeciesInfo(species_string):
     """gets species information from data storage"""
     global your_tree
-    your_tree = pinaceaeKey.Pinus_Class_Dictionary[species_string].display_characteristics(
-    )
+    your_tree = pinaceaeKey.Pinus_Genus_Dictionary[species_string]
+    defineLocation(your_tree.display_characteristics())
+    
+
+def getMoreInfo():
+    if your_tree != None:
+        more_info = your_tree.display_summary()
+        defineLocation(more_info)
 
 
 def checkForResult(route):
     """checks if chosen path is result or a route"""
     global location
-
     if type(route) == int:
         location = pinaceaeKey.pinus_binary_location[route]
         defineLocation(location)
@@ -62,12 +68,6 @@ def chooseCharacteristics(chosen_path):
         checkForResult(location[choose_a])
     if chosen_path == b:
         checkForResult(location[choose_b])
-    if chosen_path == c and location == 22:  # not working yet
-        print(location[choose_c])
-# binary tree item you chose
-# if htis points to another option, display that,
-# if this points to an actuall result, run the build display result function
-
 
 def goBackOneLevel():
     global location
@@ -82,7 +82,6 @@ def goBackOneLevel():
 class TreeIdCmd(cmd.Cmd):
     prompt = '\n>'
     # The default() method is called when none of the other do_*() command methods match.
-
     def default(self, arg):
         print('I do not understand that command. Type "help" for a list of commands.')
     # A very simple "quit" command to terminate the program:
@@ -105,14 +104,15 @@ class TreeIdCmd(cmd.Cmd):
         """Go to the area to the south, if possible."""
         chooseCharacteristics('b')
 
-    def do_c(self, arg):
-        """Go to the area to the east, if possible."""
-        chooseCharacteristics('c')
-
     def do_back(self, arg):
         """go back a level"""
         goBackOneLevel()
 
+    def do_more(self, arg):
+        """ get summary"""
+        getMoreInfo()
+
+    #TODO build combat 
     # def do_head(self, arg):
 
 
