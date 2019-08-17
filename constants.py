@@ -1,14 +1,14 @@
 
 STOUT = 'stout'
 THIN = 'thin'
+ROUND = 'round'
 LACKING = 'lacking'
 THIN_LACKING = 'thin to lacking'
-ROUND = 'round'
+BOTH = 'Both'
 NORTH = 'Northern states'
 MIDDLE = 'Middle states'
 SOUTH = 'south'
 NORTH_MIDDLE = 'northern and middle states'
-BOTH = 'Both'
 MIDDLE_SOUTH = 'middle and southern states'
 
 needle_length = 'needle length'

@@ -41,7 +41,7 @@ species_extended_info = {
     },
     'Pinus strobus': {
         'dist': NORTH_MIDDLE,
-        'needles per cluster': '3',
+        'needles per cluster': '5',
         'needle length': '3-6',
         'trunk sprouts after fire': False,
         'many old cones on tree': False,

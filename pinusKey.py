@@ -49,10 +49,10 @@ class PinusSpecies:
 
     def display_characteristics(self):
         print('The tree your entries keyed out is ' +
-              '\n\n' + self.scientific_name + '\n')
-        print('Its common name is ' + self.common_name)
+              '\n\n' + self.scientific_name + '\n') #
+        print('Its common name is ' + self.common_name)#
         print('The distribution of this tree is ' +
-              self.characteristics[distribution])
+              self.characteristics[distribution])#
         print('There are '+self.characteristics[needle_count] +
               ' needles per cluster and the needle length is ' + self.characteristics[needle_length]+' inches.')
         if self.characteristics[cone_length] == True:

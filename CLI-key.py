@@ -90,12 +90,9 @@ class TreeIdCmd(cmd.Cmd):
         """Quit the game."""
         return True  # this exits the Cmd application loop in TextAdventureCmd.cmdloop()
 
-    def help_combat(self):
+    def do_combat(self, arg):
         print('Combat is not implemented in this program.')
 
-    # These direction commands have a long (i.e. north) and show (i.e. n) form.
-    # Since the code is basically the same, I put it in the moveDirection()
-    # function.
     def do_a(self, arg):
         """Go to the area to the north, if possible."""
         chooseCharacteristics('a')
